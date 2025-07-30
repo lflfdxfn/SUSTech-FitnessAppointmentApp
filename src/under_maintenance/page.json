@@ -1,0 +1,37 @@
+[
+  {
+    "id": "container1",
+    "component": "Container",
+    "attributes": {
+      "data": {},
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center"
+      }
+    },
+    "items": [
+      {
+        "id": "text1",
+        "component": "WdText",
+        "attributes": {
+          "inheritColor": true,
+          "maxLines": "1",
+          ":text": "$w.app.dataset.state.var_maintenance_message"
+        },
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {
+      "attributeExtraData": {}
+    }
+  }
+]

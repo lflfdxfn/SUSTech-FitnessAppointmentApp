@@ -1,0 +1,57 @@
+[
+  {
+    "id": "scrollView1",
+    "component": "ScrollView",
+    "attributes": {
+      "bounces": true,
+      "enableBackToTop": false,
+      "enableFlex": false,
+      "enhanced": false,
+      "fastDeceleration": false,
+      "lowerThreshold": 50,
+      "pagingEnabled": false,
+      "refresherBackground": "#fff",
+      "refresherDefaultStyle": "block",
+      "refresherEnabled": false,
+      "refresherThreshold": 50,
+      "refresherTriggered": false,
+      "scrollAnchoring": false,
+      "scrollWithAnimation": false,
+      "scrollX": false,
+      "scrollY": true,
+      "showScrollbar": true,
+      "upperThreshold": 50
+    },
+    "items": [
+      {
+        "id": "text1",
+        "component": "WdText",
+        "attributes": {
+          "inheritColor": true,
+          "level": "title-3",
+          "maxLines": "1",
+          ":text": "$w.page.dataset.state.txt_announcement_txt",
+          "style": {
+            "margin": "30px 20px 0px",
+            "padding": "10px",
+            "fontSize": "36px",
+            "fontWeight": "bolder",
+            "lineHeight": "55px"
+          }
+        },
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {
+      "attributeExtraData": {}
+    }
+  }
+]

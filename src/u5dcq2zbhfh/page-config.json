@@ -1,0 +1,45 @@
+{
+  "attributes": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorBottom": "#FFFFFF",
+    "backgroundColorTop": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "指南",
+    "navigationStyle": "default",
+    "pageOrientation": "portrait",
+    "reachBottomDistance": 50,
+    "src": "",
+    "title": "指南"
+  },
+  "dataset": {
+    "state": {
+      "rules_markdown": {
+        "name": "rules_markdown",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": false
+      }
+    }
+  },
+  "extra": {},
+  "listeners": [
+    {
+      "id": "wlbqnwiv8cf",
+      "eventName": "load",
+      "type": "rematch",
+      "handler": {
+        "name": "whenready",
+        "module": "u5dcq2zbhfh",
+        "params": {}
+      },
+      "isCapturePhase": false,
+      "noPropagation": false
+    }
+  ],
+  "_ignoreResources": []
+}

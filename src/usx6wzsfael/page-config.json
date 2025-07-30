@@ -1,0 +1,31 @@
+{
+  "attributes": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorBottom": "#FFFFFF",
+    "backgroundColorTop": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "空白页",
+    "navigationStyle": "default",
+    "pageOrientation": "portrait",
+    "reachBottomDistance": 50,
+    "src": "",
+    "title": "空白页"
+  },
+  "dataset": {
+    "state": {
+      "date_tmp": {
+        "name": "date_tmp",
+        "label": "",
+        "varType": "state",
+        "dataType": "number",
+        "initialValue": 0,
+        "enableSyncLocal": false
+      }
+    }
+  },
+  "extra": {},
+  "_ignoreResources": []
+}

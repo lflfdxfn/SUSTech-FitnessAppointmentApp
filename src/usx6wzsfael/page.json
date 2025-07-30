@@ -1,0 +1,173 @@
+[
+  {
+    "id": "grid1",
+    "component": "Grid",
+    "attributes": {
+      "gutterX": "8px",
+      "gutterY": "8px",
+      "template": "[3,[1,4,1]]"
+    },
+    "items": [
+      {
+        "id": "row1",
+        "component": "Row",
+        "attributes": {
+          "alignItems": "stretch"
+        },
+        "items": [
+          {
+            "id": "col1",
+            "component": "Col",
+            "attributes": {
+              "alignSelf": "auto",
+              "widthType": "auto-fill"
+            },
+            "items": [
+              {
+                "id": "text1",
+                "component": "WdText",
+                "attributes": {
+                  "inheritColor": true,
+                  "maxLines": "1",
+                  "text": "这里是给超级管理员提供的用于手机上拉黑的页面\n需要注意的是：请在一天的预约时间结束后再进行操作"
+                },
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      },
+      {
+        "id": "row2",
+        "component": "Row",
+        "attributes": {
+          "alignItems": "stretch"
+        },
+        "items": [
+          {
+            "id": "col2",
+            "component": "Col",
+            "attributes": {
+              "alignSelf": "auto",
+              "widthType": "auto-fill"
+            },
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "col3",
+            "component": "Col",
+            "attributes": {
+              "alignSelf": "auto",
+              "widthType": "auto-fill"
+            },
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "col4",
+            "component": "Col",
+            "attributes": {
+              "alignSelf": "auto",
+              "widthType": "auto-fill"
+            },
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "col5",
+            "component": "Col",
+            "attributes": {
+              "alignSelf": "auto",
+              "widthType": "auto-fill"
+            },
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {
+      "attributeExtraData": {}
+    }
+  },
+  {
+    "id": "date1",
+    "label": "日期时间选择",
+    "component": "WdDate",
+    "attributes": {
+      "label": "日期时间",
+      "mode": "day",
+      "name": "ssd",
+      "placeholder": "请选择",
+      "prefixIcon": "success",
+      "prefixType": "",
+      "requiredMsg": "该项为必填项",
+      "status": "edit",
+      "suffixIcon": "td:calendar",
+      "suffixType": "inner"
+    },
+    "listeners": [
+      {
+        "id": "wuceuuurf87",
+        "eventName": "change",
+        "type": "rematch",
+        "handler": {
+          "name": "page_refresh",
+          "module": "usx6wzsfael",
+          "params": {}
+        },
+        "isCapturePhase": false,
+        "noPropagation": false
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {
+      "attributeExtraData": {}
+    }
+  }
+]

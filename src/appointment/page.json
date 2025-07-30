@@ -1,0 +1,527 @@
+[
+  {
+    "id": "layout_ix0f9iwz",
+    "label": "layout_ix0f9iwz",
+    "module": "$template",
+    "component": "layout_ix0f9iwz",
+    "items": [
+      {
+        "id": "default",
+        "component": "",
+        "items": [
+          {
+            "id": "container1",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "top": "0",
+                "left": "0",
+                "right": "0",
+                "height": "12vh",
+                "zIndex": 1000,
+                "display": "flex",
+                "position": "fixed",
+                "alignItems": "center",
+                "justifyContent": "space-between",
+                "backgroundColor": "#a9225b",
+                "borderBottomColor": "#b76990",
+                "borderBottomStyle": "solid",
+                "borderBottomWidth": "5rpx"
+              }
+            },
+            "items": [
+              {
+                "id": "container2",
+                "component": "Container",
+                "attributes": {
+                  "data": {},
+                  "style": {
+                    "margin": "auto",
+                    "display": "flex",
+                    "alignItems": "center",
+                    "justifyContent": "center"
+                  }
+                },
+                "items": [
+                  {
+                    "id": "text3",
+                    "component": "WdText",
+                    "attributes": {
+                      "inheritColor": true,
+                      "level": "title-5",
+                      "maxLines": "1",
+                      "text": "书院健身房\n",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "45rpx",
+                        "fontFamily": "'SimSun', sans-serif",
+                        "fontWeight": "bold",
+                        "marginBottom": "-4.5vh"
+                      }
+                    },
+                    "directives": {
+                      ":if": true
+                    },
+                    "scopedStyle": ":scope {\n  text-shadow: 2px 0 #606060, 0 2px #606060, -1px 0 #606060, 0 -1px #606060;\n}",
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "container4",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "top": "12vh",
+                "height": "50vh",
+                "padding": "2.8vh",
+                "position": "fixed",
+                "backgroundImage": "linear-gradient(#a9225b, #dd5a91)"
+              }
+            },
+            "items": [
+              {
+                "id": "text4",
+                "component": "WdText",
+                "attributes": {
+                  "inheritColor": true,
+                  "level": "body-sm",
+                  ":text": "\"通知：\"+$w.app.dataset.state.text_announcement_text",
+                  "userSelect": true,
+                  "style": {
+                    "color": "white",
+                    "fontSize": "26rpx",
+                    "fontFamily": "'黑体', sans-serif",
+                    "fontWeight": "bold"
+                  }
+                },
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "container3",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "--a": "27rpx",
+                "top": "28vh",
+                "width": "92%",
+                "filter": "drop-shadow(0 0 10rpx #8a1d4a)",
+                "height": "55vh",
+                "margin": "0vh 4% 0rpx 4%",
+                "padding": "10rpx 0rpx 10rpx 0rpx",
+                "position": "fixed",
+                "WebkitFilter": "drop-shadow(0 0 10rpx #8a1d4a)",
+                "borderRadius": "10rpx",
+                "backgroundColor": "white"
+              }
+            },
+            "items": [
+              {
+                "id": "topTab1",
+                "label": "顶部选项卡",
+                "component": "WdTopTab",
+                "attributes": {
+                  "isMultipleSlot": true,
+                  "isSlotAuto": true,
+                  "list": [
+                    {
+                      "value": "1",
+                      "slotKey": "1",
+                      "iconType": "none",
+                      "__sortid__": "iTrlTNt-pXiVueOJc1taK",
+                      "isDisabled": false,
+                      ":label": "`今天（${$w.page.dataset.state.topTab_today_date.slice(5)}）`"
+                    },
+                    {
+                      "value": "2",
+                      "slotKey": "2",
+                      "iconType": "none",
+                      "__sortid__": "8ZvmCiM3hSizyFFRdg2Tu",
+                      "isDisabled": false,
+                      ":label": "`明天（${$w.page.dataset.state.topTab_tomorrow_date.slice(5)}）`"
+                    }
+                  ],
+                  "style": {
+                    "--a": "30rpx",
+                    "height": "47vh",
+                    "--padding": "0.5vh"
+                  }
+                },
+                "items": [
+                  {
+                    "id": "autoPanel_1",
+                    "component": "",
+                    "items": [
+                      {
+                        "id": "scrollView1",
+                        "component": "ScrollView",
+                        "attributes": {
+                          "bounces": true,
+                          "enableBackToTop": false,
+                          "enableFlex": false,
+                          "enhanced": false,
+                          "fastDeceleration": false,
+                          "lowerThreshold": 50,
+                          "pagingEnabled": false,
+                          "refresherBackground": "#fff",
+                          "refresherDefaultStyle": "block",
+                          "refresherEnabled": false,
+                          "refresherThreshold": 50,
+                          "refresherTriggered": false,
+                          "scrollAnchoring": false,
+                          "scrollWithAnimation": false,
+                          "scrollX": false,
+                          "scrollY": true,
+                          "showScrollbar": true,
+                          "upperThreshold": 50,
+                          "style": {
+                            "height": "41vh"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "radio1",
+                            "component": "WdRadioList",
+                            "attributes": {
+                              "borderedH5": true,
+                              "direction": "vertical",
+                              "enumName": "",
+                              "format": "",
+                              "label": "",
+                              "labelVisible": false,
+                              "name": "radio1",
+                              ":range": "$w.app.dataset.state.var_available_info_today",
+                              "required": true,
+                              "requiredFlag": true,
+                              "requiredMsg": "该项为必填项",
+                              "size": "",
+                              "status": "edit",
+                              "tipBlock": "",
+                              "value": "",
+                              "style": {
+                                "margin": "0px"
+                              }
+                            },
+                            "directives": {
+                              ":if": true
+                            },
+                            "scopedStyle": "/* 编辑态-选项样式 */\n:scope .wd-radio-label {\n  font-size: 15px;\n}\n/* 禁用态-选项样式 */\n:scope .is-disabled .wd-radio-label {\n  color: gray;\n}",
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {}
+                  },
+                  {
+                    "id": "autoPanel_2",
+                    "component": "",
+                    "items": [
+                      {
+                        "id": "scrollView2",
+                        "component": "ScrollView",
+                        "attributes": {
+                          "bounces": true,
+                          "enableBackToTop": false,
+                          "enableFlex": false,
+                          "enhanced": false,
+                          "fastDeceleration": false,
+                          "lowerThreshold": 50,
+                          "pagingEnabled": false,
+                          "refresherBackground": "#fff",
+                          "refresherDefaultStyle": "block",
+                          "refresherEnabled": false,
+                          "refresherThreshold": 50,
+                          "refresherTriggered": false,
+                          "scrollAnchoring": false,
+                          "scrollWithAnimation": false,
+                          "scrollX": false,
+                          "scrollY": true,
+                          "showScrollbar": true,
+                          "upperThreshold": 50,
+                          "style": {
+                            "height": "41vh"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "radio2",
+                            "component": "WdRadioList",
+                            "attributes": {
+                              "borderedH5": true,
+                              "direction": "vertical",
+                              "enumName": "",
+                              "format": "",
+                              "label": "",
+                              "labelVisible": false,
+                              "name": "radio2",
+                              ":range": "$w.app.dataset.state.var_available_info_tomorrow",
+                              "required": false,
+                              "requiredFlag": true,
+                              "requiredMsg": "该项为必填项",
+                              "size": "",
+                              "status": "edit",
+                              "value": "",
+                              "style": {
+                                "margin": "0px"
+                              }
+                            },
+                            "directives": {
+                              ":if": true
+                            },
+                            "scopedStyle": "/* 编辑态-选项样式 */\n:scope .wd-radio-label {\n  font-size: 15px;\n}\n/* 禁用态-选项样式 */\n:scope .is-disabled .wd-radio-label {\n  color: gray;\n}",
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {}
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "scopedStyle": ":scope .wd-tabs__header {\n  font-size: var(--a);\n  padding: var(--padding) 0;\n}\n\n:scope .wd-tabs__item {\n  font-size: var(--a);\n  padding: 0 var(--padding);\n  position: relative; /* 为标签容器添加相对定位，以便绝对定位横线 */\n}\n\n:scope .wd-tabs__item.is-selected {\n  font-size: var(--a);\n  padding: 0 var(--padding);\n}\n\n:scope .wd-tabs__item-text {\n  font-size: var(--a);\n  padding: 0 var(--padding);\n  display: inline-block; /* 使文本标签成为内联块元素，以便应用伪元素 */\n}\n\n:scope .wd-tabs__body {\n  font-size: var(--a);\n  padding: var(--padding);\n}\n\n:scope .wd-tabs-h5-root .wd-tabs__header-item-mask {\n  font-size: var(--a);\n  padding: var(--padding) 0;\n}",
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              },
+              {
+                "id": "grid1",
+                "component": "Grid",
+                "attributes": {
+                  "gutterX": "8px",
+                  "gutterY": "8px",
+                  "template": "[1,3]",
+                  "style": {
+                    "margin": "12rpx 0px 20rpx",
+                    "textAlign": "center",
+                    "placeItems": "center"
+                  }
+                },
+                "items": [
+                  {
+                    "id": "row1",
+                    "component": "Row",
+                    "attributes": {
+                      "alignItems": "stretch",
+                      "style": {
+                        "width": "100%",
+                        "margin": "0rpx",
+                        "padding": "0rpx"
+                      }
+                    },
+                    "items": [
+                      {
+                        "id": "col1",
+                        "component": "Col",
+                        "attributes": {
+                          "alignSelf": "auto",
+                          "widthType": "auto-fill",
+                          "style": {
+                            "margin": "0",
+                            "display": "flex",
+                            "alignItems": "center",
+                            "paddingLeft": "80rpx",
+                            "flexDirection": "row",
+                            "justifyContent": "center"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "button1",
+                            "component": "WdButton",
+                            "attributes": {
+                              ":disabled": "$w.page.dataset.state.button_appointment_disabled",
+                              "icon": "success",
+                              "size": "sm",
+                              ":text": "$w.page.dataset.state.button_appointment_text",
+                              "style": {
+                                "width": "15vh",
+                                "borderRadius": "10rpx"
+                              }
+                            },
+                            "listeners": [
+                              {
+                                "id": "w78z6ahh7uc",
+                                "eventName": "tap",
+                                "type": "rematch",
+                                "handler": {
+                                  "name": "button_appointment_tap",
+                                  "module": "appointment",
+                                  "params": {}
+                                },
+                                "isCapturePhase": false,
+                                "noPropagation": false
+                              }
+                            ],
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      },
+                      {
+                        "id": "col2",
+                        "component": "Col",
+                        "attributes": {
+                          "alignSelf": "auto",
+                          "widthType": "auto-fill",
+                          "style": {
+                            "margin": "0",
+                            "display": "flex",
+                            "alignItems": "center",
+                            "paddingRight": "80rpx",
+                            "justifyContent": "center"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "button2",
+                            "component": "WdButton",
+                            "attributes": {
+                              ":disabled": "$w.page.dataset.state.button_appointment_disabled",
+                              "icon": "success",
+                              "size": "sm",
+                              "text": "使用指南",
+                              "style": {
+                                "width": "15vh",
+                                "borderRadius": "10rpx"
+                              }
+                            },
+                            "listeners": [
+                              {
+                                "id": "weljxshjwhf",
+                                "eventName": "tap",
+                                "type": "platform",
+                                "handler": {
+                                  "name": "navigateTo",
+                                  "module": "platform",
+                                  "params": {
+                                    "mode": "weDa",
+                                    "packageName": "",
+                                    "pageId": "u5dcq2zbhfh",
+                                    "params": {}
+                                  }
+                                },
+                                "isCapturePhase": false,
+                                "noPropagation": false
+                              }
+                            ],
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "scopedStyle": ":scope {\n  font-weight: bold;\n  font-size: 27rpx;\n}",
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "scopedStyle": ":scope {\n  font-size: var(--a);\n}\n:scope button {\n  font-size: var(--a);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 10rpx;\n}",
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "extra": {}
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {}
+  }
+]

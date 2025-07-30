@@ -1,0 +1,556 @@
+[
+  {
+    "id": "layout_ix0f9iwz",
+    "label": "layout_ix0f9iwz",
+    "module": "$template",
+    "component": "layout_ix0f9iwz",
+    "items": [
+      {
+        "id": "default",
+        "component": "",
+        "items": [
+          {
+            "id": "container2",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "top": "0",
+                "left": "0",
+                "right": "0",
+                "height": "12vh",
+                "zIndex": 1000,
+                "display": "flex",
+                "position": "fixed",
+                "alignItems": "center",
+                "justifyContent": "space-between",
+                "backgroundColor": "#a9225b",
+                "borderBottomColor": "#b76990",
+                "borderBottomStyle": "solid",
+                "borderBottomWidth": "5rpx"
+              }
+            },
+            "items": [
+              {
+                "id": "container5",
+                "component": "Container",
+                "attributes": {
+                  "data": {},
+                  "style": {
+                    "margin": "auto",
+                    "display": "flex",
+                    "alignItems": "center",
+                    "justifyContent": "center"
+                  }
+                },
+                "items": [
+                  {
+                    "id": "text2",
+                    "component": "WdText",
+                    "attributes": {
+                      "inheritColor": true,
+                      "maxLines": "1",
+                      "text": "扫码签到",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "45rpx",
+                        "fontFamily": "'SimSun', sans-serif",
+                        "fontWeight": "bold",
+                        "marginBottom": "-4.5vh"
+                      }
+                    },
+                    "directives": {
+                      ":if": true
+                    },
+                    "scopedStyle": ":scope {\r\n  text-shadow: 2px 0 #606060, 0 2px #606060, -1px 0 #606060, 0 -1px #606060;\r\n}",
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "container6",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "--a": "27rpx",
+                "top": "12vh",
+                "width": "100%",
+                "height": "49vh",
+                "zIndex": 1,
+                "display": "flex",
+                "padding": "2.8vh",
+                "position": "fixed",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "backgroundImage": "linear-gradient(#a9225b, #dd5a91)",
+                "--button-border-radius": "10rpx"
+              }
+            },
+            "items": [
+              {
+                "id": "text1",
+                "component": "WdText",
+                "attributes": {
+                  "inheritColor": true,
+                  "level": "body-sm",
+                  "maxLines": "1",
+                  "text": "* 二维码有效期为两分钟，点击更新，请让管理员扫码",
+                  "style": {
+                    "top": "55%",
+                    "color": "#ffffff",
+                    "width": "100%",
+                    "margin": "3% 0px",
+                    "position": "fixed",
+                    "textAlign": "center"
+                  }
+                },
+                "directives": {
+                  ":if": true
+                },
+                "scopedStyle": ":scope {\n  font-size: 27rpx;\n  font-weight: bold;\n  color: #fff;\n}",
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "container1",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "top": "230rpx",
+                "left": "20%",
+                "right": "20%",
+                "width": "60%",
+                "height": "450rpx",
+                "zIndex": 1,
+                "display": "flex",
+                "position": "fixed",
+                "alignItems": "center",
+                "borderRadius": "15rpx",
+                "justifyContent": "center",
+                "backgroundColor": "white"
+              }
+            },
+            "items": [
+              {
+                "id": "qrCode1",
+                "component": "QrCode",
+                "attributes": {
+                  "backgroundColor": "#ffffff",
+                  "foregroundColor": "#000000",
+                  "showMenuByLongpress": false,
+                  ":text": "$w.page.dataset.state.var_check_info",
+                  "style": {
+                    "width": "400rpx",
+                    "height": "400rpx"
+                  }
+                },
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "listeners": [
+              {
+                "id": "wmq189whqiu",
+                "eventName": "tap",
+                "type": "rematch",
+                "handler": {
+                  "name": "check_in_gen_code",
+                  "module": "check_in",
+                  "params": {}
+                },
+                "isCapturePhase": false,
+                "noPropagation": false
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "container4",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "top": "69vh",
+                "width": "96%",
+                "bottom": "10vh",
+                "filter": "drop-shadow(0 0 10rpx #baaeb3)",
+                "margin": "0vh 2% 0rpx 2%",
+                "display": "flex",
+                "position": "fixed",
+                "alignItems": "center",
+                "WebkitFilter": "drop-shadow(0 0 10rpx #baaeb3)",
+                "justifyContent": "center",
+                "backgroundColor": "#f2e7eb"
+              }
+            },
+            "items": [
+              {
+                "id": "scrollView1",
+                "component": "ScrollView",
+                "attributes": {
+                  "bounces": true,
+                  "enableBackToTop": false,
+                  "enableFlex": false,
+                  "enhanced": false,
+                  "fastDeceleration": false,
+                  "lowerThreshold": 50,
+                  "pagingEnabled": false,
+                  "refresherBackground": "#fff",
+                  "refresherDefaultStyle": "block",
+                  "refresherEnabled": false,
+                  "refresherThreshold": 50,
+                  "refresherTriggered": false,
+                  "scrollAnchoring": false,
+                  "scrollWithAnimation": false,
+                  "scrollX": false,
+                  "scrollY": true,
+                  "showScrollbar": false,
+                  "upperThreshold": 50
+                },
+                "items": [
+                  {
+                    "id": "listView1",
+                    "component": "ListView",
+                    "attributes": {
+                      "bindConnectMetadata": {
+                        "datasource": {}
+                      },
+                      "connectorMethod": {
+                        "inParams": [],
+                        "outParams": []
+                      },
+                      "connectorParams": {},
+                      ":dataSourceData": "$w.page.dataset.state.var_scan_history_tmp",
+                      "dataSourceType": "expression",
+                      "datasource": {
+                        "extra": {}
+                      },
+                      "emptyText": "暂无数据",
+                      "enableTotal": false,
+                      "exprToFieldsSchema": "c59307c8",
+                      "isSetStatus": true,
+                      "isSupportApis": false,
+                      "isSupportMultipleSort": true,
+                      "loadCompletedText": "",
+                      "pageIndex": 1,
+                      "pageSize": 5,
+                      "pagination": "bottomLoad",
+                      "queryCondition": [
+                        {}
+                      ],
+                      "supportManyRelated": true,
+                      "template": "simpleList",
+                      "style": {
+                        "padding": "8PX 16PX"
+                      }
+                    },
+                    "items": [
+                      {
+                        "id": "repeater1",
+                        "component": "Repeater",
+                        "attributes": {
+                          ":data": "$w.listView1.records || []",
+                          "forIndex": "index_listView1",
+                          "forItem": "item_listView1",
+                          "key": "_id",
+                          "suffix": "listView1"
+                        },
+                        "items": [
+                          {
+                            "id": "grid1",
+                            "component": "Grid",
+                            "attributes": {
+                              "gutterX": "8px",
+                              "gutterY": "8px",
+                              "template": "[1,3]",
+                              "style": {
+                                "textAlign": "center"
+                              }
+                            },
+                            "items": [
+                              {
+                                "id": "row1",
+                                "component": "Row",
+                                "attributes": {
+                                  "alignItems": "stretch",
+                                  "style": {
+                                    "height": "50rpx"
+                                  }
+                                },
+                                "items": [
+                                  {
+                                    "id": "col1",
+                                    "component": "Col",
+                                    "attributes": {
+                                      "alignSelf": "auto",
+                                      "widthType": "auto-fill",
+                                      "style": {
+                                        "display": "flex",
+                                        "borderRight": "1px solid #baaeb3"
+                                      }
+                                    },
+                                    "items": [
+                                      {
+                                        "id": "text3",
+                                        "component": "WdText",
+                                        "attributes": {
+                                          "inheritColor": true,
+                                          "maxLines": "1",
+                                          ":text": "$w.item_listView1.tagged_userid",
+                                          "style": {
+                                            "textAlign": "center",
+                                            "fontWeight": "normal"
+                                          }
+                                        },
+                                        "directives": {
+                                          ":if": true
+                                        },
+                                        "scopedStyle": ":scope{\n  font-size: 28rpx;\n  font-weight: bold;\n}",
+                                        "extra": {
+                                          "attributeExtraData": {}
+                                        }
+                                      }
+                                    ],
+                                    "directives": {
+                                      ":if": true
+                                    },
+                                    "extra": {
+                                      "attributeExtraData": {}
+                                    }
+                                  },
+                                  {
+                                    "id": "col2",
+                                    "component": "Col",
+                                    "attributes": {
+                                      "alignSelf": "auto",
+                                      "widthType": "auto-fill",
+                                      "style": {
+                                        "display": "flex",
+                                        "borderRight": "1px solid #baaeb3"
+                                      }
+                                    },
+                                    "items": [
+                                      {
+                                        "id": "text4",
+                                        "component": "WdText",
+                                        "attributes": {
+                                          "inheritColor": true,
+                                          "maxLines": "1",
+                                          ":text": "$w.item_listView1.tagged_time",
+                                          "style": {
+                                            "textAlign": "center",
+                                            "fontWeight": "lighter"
+                                          }
+                                        },
+                                        "directives": {
+                                          ":if": true
+                                        },
+                                        "scopedStyle": ":scope{\n  font-size: 28rpx;\n  font-weight: bold;\n}",
+                                        "extra": {
+                                          "attributeExtraData": {}
+                                        }
+                                      }
+                                    ],
+                                    "directives": {
+                                      ":if": true
+                                    },
+                                    "extra": {
+                                      "attributeExtraData": {}
+                                    }
+                                  },
+                                  {
+                                    "id": "col3",
+                                    "component": "Col",
+                                    "attributes": {
+                                      "alignSelf": "auto",
+                                      "widthType": "auto-fill",
+                                      "style": {
+                                        "width": "50%",
+                                        "textAlign": "left"
+                                      }
+                                    },
+                                    "items": [
+                                      {
+                                        "id": "text5",
+                                        "component": "WdText",
+                                        "attributes": {
+                                          "inheritColor": true,
+                                          "maxLines": "1",
+                                          ":text": "$w.item_listView1.tag_result",
+                                          "style": {
+                                            "textAlign": "left",
+                                            "fontWeight": "normal"
+                                          }
+                                        },
+                                        "directives": {
+                                          ":if": true
+                                        },
+                                        ":style": "$w.item_listView1.tag_result===\"签到成功\" ? {color: 'green'} : {color:'red'}",
+                                        "scopedStyle": ":scope{\n  font-size: 28rpx;\n  font-weight: bold;\n}",
+                                        "extra": {
+                                          "attributeExtraData": {}
+                                        }
+                                      }
+                                    ],
+                                    "directives": {
+                                      ":if": true
+                                    },
+                                    "extra": {
+                                      "attributeExtraData": {}
+                                    }
+                                  }
+                                ],
+                                "directives": {
+                                  ":if": true
+                                },
+                                "extra": {
+                                  "attributeExtraData": {}
+                                }
+                              }
+                            ],
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":display": "$w.app.dataset.state.var_if_superusr"
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "container3",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "top": "61vh",
+                "width": "100%",
+                "height": "8vh",
+                "display": "flex",
+                "padding": "2.8vh",
+                "position": "fixed",
+                "alignItems": "center",
+                "justifyContent": "center"
+              }
+            },
+            "items": [
+              {
+                "id": "button1",
+                "component": "WdButton",
+                "attributes": {
+                  "icon": "success",
+                  "text": "扫码标记到场",
+                  "style": {
+                    "margin": "0% 0px 0px",
+                    "borderRadius": "10rpx"
+                  }
+                },
+                "listeners": [
+                  {
+                    "id": "w6tpfhzq37f",
+                    "eventName": "tap",
+                    "type": "rematch",
+                    "handler": {
+                      "name": "scan_to_check_in",
+                      "module": "check_in",
+                      "params": {}
+                    },
+                    "isCapturePhase": false,
+                    "noPropagation": false
+                  }
+                ],
+                "directives": {
+                  ":display": "$w.app.dataset.state.var_if_superusr"
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "scopedStyle": ":scope button {\n  font-size: 27rpx;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 20rpx;\n  font-weight: bold;\n}",
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "extra": {}
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {}
+  }
+]

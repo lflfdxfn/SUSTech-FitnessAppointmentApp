@@ -1,0 +1,48 @@
+[
+  {
+    "id": "scrollView1",
+    "component": "ScrollView",
+    "attributes": {
+      "bounces": true,
+      "enableBackToTop": false,
+      "enableFlex": false,
+      "enhanced": false,
+      "fastDeceleration": false,
+      "lowerThreshold": 50,
+      "pagingEnabled": false,
+      "refresherBackground": "#fff",
+      "refresherDefaultStyle": "block",
+      "refresherEnabled": false,
+      "refresherThreshold": 50,
+      "refresherTriggered": false,
+      "scrollAnchoring": false,
+      "scrollWithAnimation": false,
+      "scrollX": false,
+      "scrollY": true,
+      "showScrollbar": true,
+      "upperThreshold": 50
+    },
+    "items": [
+      {
+        "id": "markdown1",
+        "component": "WdMarkdown",
+        "attributes": {
+          ":options": "{\n  html:         false,        // 在源码中启用 HTML 标签\n  xhtmlOut:     false,        // 使用 / 来闭合单标签 （比如 <br />）。\n                              // 这个选项只对完全的 CommonMark 模式兼容。\n  breaks:       false,        // 转换段落里的 换行符 到 <br>。\n  langPrefix:   'language-',  // 给围栏代码块的 CSS 语言前缀。对于额外的高亮代码非常有用。\n  linkify:      false,        // 将类似 URL 的文本自动转换为链接。\n\n  // 启用一些语言中立的替换 + 引号美化\n  typographer:  false,\n\n  // 双 + 单引号替换对，当 typographer 启用时。\n  // 或者智能引号等，可以是 String 或 Array。\n  //\n  // 比方说，你可以支持 '«»„“' 给俄罗斯人使用， '„“‚‘'  给德国人使用。\n  quotes: '“”‘’',\n\n}\n",
+          ":value": "$w.page.dataset.state.rules_markdown"
+        },
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {
+      "attributeExtraData": {}
+    }
+  }
+]

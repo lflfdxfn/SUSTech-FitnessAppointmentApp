@@ -1,0 +1,895 @@
+[
+  {
+    "id": "container4",
+    "component": "Container",
+    "attributes": {
+      "data": {},
+      "style": {
+        "top": "0",
+        "left": "0",
+        "right": "0",
+        "height": "12vh",
+        "zIndex": 1000,
+        "display": "flex",
+        "position": "fixed",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "backgroundColor": "#a9225b",
+        "borderBottomColor": "#b76990",
+        "borderBottomStyle": "solid",
+        "borderBottomWidth": "5rpx"
+      }
+    },
+    "items": [
+      {
+        "id": "container5",
+        "component": "Container",
+        "attributes": {
+          "data": {},
+          "style": {
+            "margin": "auto",
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center"
+          }
+        },
+        "items": [
+          {
+            "id": "text1",
+            "component": "WdText",
+            "attributes": {
+              "inheritColor": true,
+              "level": "title-4",
+              "maxLines": "1",
+              "text": "湖畔健身房预约\n",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": "45rpx",
+                "fontFamily": "'SimSun', sans-serif",
+                "fontWeight": "bold",
+                "marginBottom": "-4.5vh"
+              }
+            },
+            "directives": {
+              ":if": true
+            },
+            "scopedStyle": ":scope {\n  text-shadow: 2px 0 #606060, 0 2px #606060, -1px 0 #606060, 0 -1px #606060;\n}",
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {
+      "attributeExtraData": {}
+    }
+  },
+  {
+    "id": "container7",
+    "component": "Container",
+    "attributes": {
+      "data": {},
+      "style": {
+        "top": "12vh",
+        "height": "50vh",
+        "padding": "2.8vh",
+        "position": "fixed",
+        "backgroundImage": "linear-gradient(#a9225b, #dd5a91)"
+      }
+    },
+    "items": [
+      {
+        "id": "text4",
+        "component": "WdText",
+        "attributes": {
+          "inheritColor": true,
+          "maxLines": "1",
+          ":text": "\"通知：\"+$w.app.dataset.state.text_announcement_text",
+          "style": {
+            "color": "white",
+            "fontSize": "26rpx",
+            "fontFamily": "'黑体', sans-serif",
+            "fontWeight": "bold"
+          }
+        },
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {
+      "attributeExtraData": {}
+    }
+  },
+  {
+    "id": "container8",
+    "component": "Container",
+    "attributes": {
+      "data": {},
+      "style": {
+        "--a": "27rpx",
+        "top": "28vh",
+        "width": "92%",
+        "filter": "drop-shadow(0 0 10rpx #8a1d4a)",
+        "margin": "0vh 4% 0vh 4%",
+        "padding": "1.7vh",
+        "position": "fixed",
+        "WebkitFilter": "drop-shadow(0 0 10rpx #8a1d4a)",
+        "borderRadius": "10rpx",
+        "backgroundColor": "white"
+      }
+    },
+    "items": [
+      {
+        "id": "topTab1",
+        "component": "WdTopTab",
+        "attributes": {
+          "isMultipleSlot": false,
+          "isSlotAuto": true,
+          "list": [
+            {
+              "label": "学生",
+              "value": "1",
+              "slotKey": "1",
+              "iconType": "none",
+              "__sortid__": "id3h_jb26dFMGkva9pyfE",
+              "isDisabled": false
+            },
+            {
+              "label": "老师",
+              "value": "2",
+              "slotKey": "2",
+              "iconType": "none",
+              "__sortid__": "2rLtFnIxkGQSqZqFtamBS",
+              "isDisabled": false
+            }
+          ],
+          "style": {
+            "--a": "30rpx",
+            "--padding": "0.5vh"
+          }
+        },
+        "directives": {
+          ":if": true
+        },
+        "scopedStyle": ":scope .wd-tabs__header {\n  font-size: var(--a);\n  padding: var(--padding) 0;\n}\n\n:scope .wd-tabs__item {\n  font-size: var(--a);\n  padding: 0 var(--padding);\n  position: relative; /* 为标签容器添加相对定位，以便绝对定位横线 */\n}\n\n:scope .wd-tabs__item.is-selected {\n  font-size: var(--a);\n  padding: 0 var(--padding);\n}\n\n:scope .wd-tabs__item-text {\n  font-size: var(--a);\n  padding: 0 var(--padding);\n  display: inline-block; /* 使文本标签成为内联块元素，以便应用伪元素 */\n}\n\n:scope .wd-tabs__body {\n  font-size: var(--a);\n  padding: var(--padding);\n}\n\n:scope .wd-tabs-h5-root .wd-tabs__header-item-mask {\n  font-size: var(--a);\n  padding: var(--padding) 0;\n}",
+        "extra": {
+          "attributeExtraData": {}
+        }
+      },
+      {
+        "id": "input1",
+        "component": "WdInput",
+        "attributes": {
+          "inputValue": "",
+          "label": "",
+          "labelVisible": false,
+          "maxLength": 10,
+          "name": "usrname",
+          "placeholder": "请输入姓名（必填）",
+          "prefixIcon": "success",
+          "prefixType": "",
+          "required": true,
+          "requiredMsg": "该项为必填项",
+          "status": "edit",
+          "suffixIcon": "success",
+          "suffixType": "",
+          "template": "inputBox"
+        },
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      },
+      {
+        "id": "input2",
+        "component": "WdInput",
+        "attributes": {
+          "inputValue": "",
+          "label": "",
+          "labelVisible": false,
+          "maxLength": 8,
+          "name": "studentid",
+          ":placeholder": "\"请输入\"+ (($w.topTab1.selectedValue == \"1\") ? \"学号\" : \"工号\") + \"（必填）\"",
+          "prefixIcon": "success",
+          "prefixType": "",
+          "required": true,
+          "requiredMsg": "该项为必填项",
+          "rules": [
+            {
+              "icon": "自定义",
+              "title": "自定义",
+              "format": "num",
+              "message": "请输入正确格式的数字",
+              "__sortid__": "CQVIKFEQGqHM9G03ewt7e"
+            }
+          ],
+          "status": "edit",
+          "suffixIcon": "success",
+          "suffixType": "",
+          "template": "inputBox",
+          "type": "number"
+        },
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "staticResourceAttribute": [
+            "suffixSrc",
+            "prefixSrc"
+          ],
+          "attributeExtraData": {}
+        }
+      },
+      {
+        "id": "container6",
+        "component": "Container",
+        "attributes": {
+          "data": {}
+        },
+        "items": [
+          {
+            "id": "grid2",
+            "component": "Grid",
+            "attributes": {
+              "gutterX": "8px",
+              "gutterY": "8px",
+              "template": "[1,3]"
+            },
+            "items": [
+              {
+                "id": "row1",
+                "component": "Row",
+                "attributes": {
+                  "alignItems": "stretch"
+                },
+                "items": [
+                  {
+                    "id": "col1",
+                    "component": "Col",
+                    "attributes": {
+                      "alignSelf": "auto",
+                      "widthType": "auto-fill",
+                      "style": {
+                        "width": "42%"
+                      }
+                    },
+                    "items": [
+                      {
+                        "id": "input4",
+                        "component": "WdInput",
+                        "attributes": {
+                          "inputValue": "",
+                          "label": "邮箱",
+                          "labelVisible": false,
+                          "labelWidth": "10%",
+                          "name": "input4",
+                          "placeholder": "邮箱前缀（必填）",
+                          "prefixIcon": "success",
+                          "prefixType": "",
+                          "required": true,
+                          "requiredMsg": "该项为必填项",
+                          "status": "edit",
+                          "suffixIcon": "success",
+                          "suffixType": "",
+                          "template": "inputBox"
+                        },
+                        "directives": {
+                          ":display": "true"
+                        },
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  },
+                  {
+                    "id": "col2",
+                    "component": "Col",
+                    "attributes": {
+                      "alignSelf": "auto",
+                      "widthType": "auto-fill",
+                      "style": {
+                        "width": "58%"
+                      }
+                    },
+                    "items": [
+                      {
+                        "id": "select2",
+                        "component": "WdSelect",
+                        "attributes": {
+                          "clearable": false,
+                          "label": "@",
+                          "labelWidth": "5",
+                          "name": "select2",
+                          "placeholder": "请选择",
+                          "prefixType": "",
+                          "range": [
+                            {
+                              "label": "sustech.edu.cn",
+                              "value": "0",
+                              "disabled": false,
+                              "__sortid__": "VYkP3BD0fb5ZZLZajurWj"
+                            },
+                            {
+                              "label": "mail.sustech.edu.cn",
+                              "value": "1",
+                              "disabled": false,
+                              "__sortid__": "iy_szGcEtfjYDBlwJtvUu"
+                            }
+                          ],
+                          "requiredMsg": "该项为必填项",
+                          "searchPlaceholder": "搜索选项",
+                          "selectFields": [],
+                          "status": "edit",
+                          "suffixType": "fixed",
+                          "value": "0"
+                        },
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "staticResourceAttribute": [
+                            "suffixSrc",
+                            "prefixSrc"
+                          ],
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":display": "$w.topTab1.selectedValue == \"2\""
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      },
+      {
+        "id": "container1",
+        "component": "Container",
+        "attributes": {
+          "data": {}
+        },
+        "items": [
+          {
+            "id": "grid1",
+            "component": "Grid",
+            "attributes": {
+              "gutterX": "8px",
+              "gutterY": "8px",
+              "template": "[1,2]"
+            },
+            "items": [
+              {
+                "id": "row6",
+                "component": "Row",
+                "attributes": {
+                  "alignItems": "stretch"
+                },
+                "items": [
+                  {
+                    "id": "col14",
+                    "component": "Col",
+                    "attributes": {
+                      "alignSelf": "auto",
+                      "lgWidthType": {
+                        "type": "twelve-adjust",
+                        "unit": "px",
+                        "value": "8"
+                      },
+                      "widthType": {
+                        "type": "twelve-adjust",
+                        "unit": "px",
+                        "value": "8"
+                      }
+                    },
+                    "items": [
+                      {
+                        "id": "input3",
+                        "component": "WdInput",
+                        "attributes": {
+                          "inputValue": "",
+                          "label": "",
+                          "labelVisible": false,
+                          "name": "vericode",
+                          "placeholder": "请输入验证码（必填）",
+                          "prefixIcon": "success",
+                          "prefixType": "",
+                          "required": true,
+                          "requiredMsg": "该项为必填项",
+                          "rules": [
+                            {
+                              "icon": "自定义",
+                              "title": "自定义",
+                              "format": "num",
+                              "message": "请输入正确格式的数字",
+                              "__sortid__": "kD5d4Nw1FNKBo44Vwp1nw"
+                            }
+                          ],
+                          "status": "edit",
+                          "suffixIcon": "success",
+                          "suffixType": "",
+                          "template": "inputBox",
+                          "type": "number"
+                        },
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "staticResourceAttribute": [
+                            "suffixSrc",
+                            "prefixSrc"
+                          ],
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  },
+                  {
+                    "id": "col15",
+                    "component": "Col",
+                    "attributes": {
+                      "alignSelf": "auto",
+                      "lgWidthType": {
+                        "type": "twelve-adjust",
+                        "unit": "px",
+                        "value": "4"
+                      },
+                      "widthType": {
+                        "type": "twelve-adjust",
+                        "unit": "px",
+                        "value": "4"
+                      },
+                      "style": {
+                        "display": "flex",
+                        "textAlign": "right",
+                        "alignItems": "center",
+                        "justifyContent": "flex-end"
+                      }
+                    },
+                    "items": [
+                      {
+                        "id": "button1",
+                        "component": "WdButton",
+                        "attributes": {
+                          ":disabled": "$w.page.dataset.state.button_send_disabled",
+                          "icon": "success",
+                          ":text": "$w.page.dataset.state.button_send_text",
+                          "theme": "secondary",
+                          "style": {
+                            "textAlign": "right"
+                          }
+                        },
+                        "listeners": [
+                          {
+                            "id": "w9byfy39n6h",
+                            "eventName": "tap",
+                            "type": "rematch",
+                            "handler": {
+                              "name": "send_button_press",
+                              "module": "index",
+                              "params": {
+                                "target": ""
+                              }
+                            },
+                            "isCapturePhase": false,
+                            "noPropagation": false
+                          },
+                          {
+                            "id": "wb3nryh10s8",
+                            "eventName": "w9byfy39n6h.success",
+                            "type": "platform",
+                            "handler": {
+                              "name": "showModal",
+                              "module": "platform",
+                              "params": {
+                                "cancelColor": "#000000",
+                                "cancelText": "取消",
+                                "confirmColor": "#576B95",
+                                "confirmText": "确认",
+                                "content": "成功发送验证码",
+                                "showCancel": false,
+                                "title": "提示"
+                              }
+                            },
+                            "isCapturePhase": false,
+                            "noPropagation": false
+                          },
+                          {
+                            "id": "wrn5pleqnxp",
+                            "eventName": "w9byfy39n6h.success",
+                            "type": "rematch",
+                            "handler": {
+                              "name": "send_button_press_success",
+                              "module": "index",
+                              "params": {}
+                            },
+                            "isCapturePhase": false,
+                            "noPropagation": false
+                          },
+                          {
+                            "id": "wajton8u0cd",
+                            "eventName": "w9byfy39n6h.fail",
+                            "type": "platform",
+                            "handler": {
+                              "name": "showModal",
+                              "module": "platform",
+                              "params": {
+                                "cancelColor": "#000000",
+                                "cancelText": "取消",
+                                "confirmColor": "#576B95",
+                                "confirmText": "确认",
+                                ":content": "$w.page.dataset.state.var_error_info",
+                                "showCancel": false,
+                                "title": "提示"
+                              }
+                            },
+                            "isCapturePhase": false,
+                            "noPropagation": false
+                          },
+                          {
+                            "id": "wihmt2gd2i2",
+                            "eventName": "wajton8u0cd.confirm",
+                            "type": "platform",
+                            "handler": {
+                              "name": "_setStateVal",
+                              "module": "platform",
+                              "params": {
+                                ":val": "false",
+                                "varPath": "$page.button_send_disabled"
+                              }
+                            },
+                            "isCapturePhase": false,
+                            "noPropagation": false
+                          },
+                          {
+                            "id": "wbovpyb1qzg",
+                            "eventName": "wajton8u0cd.confirm",
+                            "type": "platform",
+                            "handler": {
+                              "name": "_setStateVal",
+                              "module": "platform",
+                              "params": {
+                                "val": "发送到邮箱",
+                                "varPath": "$page.button_send_text"
+                              }
+                            },
+                            "isCapturePhase": false,
+                            "noPropagation": false
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "staticResourceAttribute": [
+                            "sendMessageImg",
+                            "iconSrc"
+                          ],
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      },
+      {
+        "id": "container2",
+        "component": "Container",
+        "attributes": {
+          "data": {}
+        },
+        "items": [
+          {
+            "id": "text2",
+            "component": "WdText",
+            "attributes": {
+              "inheritColor": true,
+              "maxLines": "1",
+              ":text": "\"* \"+ (($w.topTab1.selectedValue == \"1\") ?\"验证码将发送到学号对应的学校邮箱地址\": \"请仔细检查工号与邮箱是否正确\")",
+              "style": {
+                "color": "#c9205e",
+                "textAlign": "center"
+              }
+            },
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "extra": {
+          "attributeExtraData": {}
+        }
+      },
+      {
+        "id": "grid3",
+        "component": "Grid",
+        "attributes": {
+          "gutterX": "8px",
+          "gutterY": "8px",
+          "template": "[1,2]",
+          "style": {
+            "margin": "30rpx 0px 20rpx",
+            "textAlign": "center",
+            "placeItems": "center"
+          }
+        },
+        "items": [
+          {
+            "id": "row3",
+            "component": "Row",
+            "attributes": {
+              "alignItems": "stretch",
+              "style": {
+                "width": "100%",
+                "margin": "0rpx",
+                "padding": "0rpx"
+              }
+            },
+            "items": [
+              {
+                "id": "col5",
+                "component": "Col",
+                "attributes": {
+                  "alignSelf": "auto",
+                  "widthType": "auto-fill",
+                  "style": {
+                    "margin": "0",
+                    "display": "flex",
+                    "padding": "0px 0px 0px 0rpx",
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "center"
+                  }
+                },
+                "items": [
+                  {
+                    "id": "button2",
+                    "component": "WdButton",
+                    "attributes": {
+                      ":disabled": "$w.page.dataset.state.button_login_disabled",
+                      "icon": "success",
+                      "size": "sm",
+                      ":text": "$w.page.dataset.state.button_login_text",
+                      "style": {
+                        "width": "15vh"
+                      }
+                    },
+                    "listeners": [
+                      {
+                        "id": "wigtvstsbdw",
+                        "eventName": "tap",
+                        "type": "rematch",
+                        "handler": {
+                          "name": "login_button_press",
+                          "module": "index",
+                          "params": {}
+                        },
+                        "isCapturePhase": false,
+                        "noPropagation": false
+                      },
+                      {
+                        "id": "wg0n2jluksa",
+                        "eventName": "wigtvstsbdw.success",
+                        "type": "platform",
+                        "handler": {
+                          "name": "redirectTo",
+                          "module": "platform",
+                          "params": {
+                            "mode": "weDa",
+                            "packageName": "",
+                            "pageId": "appointment",
+                            "params": {}
+                          }
+                        },
+                        "isCapturePhase": false,
+                        "noPropagation": false
+                      },
+                      {
+                        "id": "wiffwxao0ih",
+                        "eventName": "wigtvstsbdw.fail",
+                        "type": "platform",
+                        "handler": {
+                          "name": "showModal",
+                          "module": "platform",
+                          "params": {
+                            "cancelColor": "#000000",
+                            "cancelText": "取消",
+                            "confirmColor": "#576B95",
+                            "confirmText": "确认",
+                            ":content": "$w.page.dataset.state.var_error_info",
+                            "showCancel": false,
+                            "title": "提示"
+                          }
+                        },
+                        "isCapturePhase": false,
+                        "noPropagation": false
+                      },
+                      {
+                        "id": "wkqb4dwkf93",
+                        "eventName": "wiffwxao0ih.confirm",
+                        "type": "platform",
+                        "handler": {
+                          "name": "_setStateVal",
+                          "module": "platform",
+                          "params": {
+                            ":val": "false",
+                            "varPath": "$page.button_login_disabled"
+                          }
+                        },
+                        "isCapturePhase": false,
+                        "noPropagation": false
+                      },
+                      {
+                        "id": "w4eh0nhgd3p",
+                        "eventName": "wiffwxao0ih.confirm",
+                        "type": "platform",
+                        "handler": {
+                          "name": "_setStateVal",
+                          "module": "platform",
+                          "params": {
+                            "val": "登录",
+                            "varPath": "$page.button_login_text"
+                          }
+                        },
+                        "isCapturePhase": false,
+                        "noPropagation": false
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "scopedStyle": ":scope {\n  font-weight: bold;\n}",
+        "extra": {
+          "attributeExtraData": {}
+        }
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "scopedStyle": ":scope button {\n  font-size: var(--a);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 10rpx;\n}\n:scope input {\n  font-size: var(--a);\n}\n:scope {\n  font-size: var(--a);\n}",
+    "extra": {
+      "attributeExtraData": {}
+    }
+  },
+  {
+    "id": "image1",
+    "component": "WdImage",
+    "attributes": {
+      "alt": "[图片]",
+      "fit": "widthFix",
+      "src": "/resources/2025-01/lowcode-2082052",
+      "style": {
+        "left": "50%",
+        "width": "50%",
+        "bottom": "0",
+        "margin": "0px 0px 4%",
+        "position": "fixed",
+        "transform": "translateX(-50%)"
+      }
+    },
+    "directives": {
+      ":if": true
+    },
+    "scopedStyle": ":scope .wd-image-preview-container {\n  /* 预览弹窗元素的样式 */\n}\n\n:scope .wd-image-mask {\n  /* 预览背景的样式 */\n}\n\n:scope .wd-image-mask__icon-close {\n  /* 关闭按钮的样式 */\n}",
+    "extra": {
+      "staticResourceAttribute": [
+        "src"
+      ],
+      "attributeExtraData": {}
+    }
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "attributes": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorBottom": "#FFFFFF",
+    "backgroundColorTop": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "namespace": "personal",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "个人",
+    "navigationStyle": "default",
+    "pageOrientation": "portrait",
+    "reachBottomDistance": 50,
+    "src": "",
+    "title": "个人"
+  },
+  "dataset": {
+    "state": {
+      "var_order_id_tmp": {
+        "name": "var_order_id_tmp",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": ""
+      },
+      "var_order_date_tmp": {
+        "name": "var_order_date_tmp",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": ""
+      },
+      "var_order_history_tmp": {
+        "name": "var_order_history_tmp",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": true
+      },
+      "var_order_delete_disable": {
+        "name": "var_order_delete_disable",
+        "label": "是否不可以点击预约",
+        "varType": "state",
+        "dataType": "boolean",
+        "initialValue": false,
+        "enableSyncLocal": false
+      }
+    }
+  },
+  "extra": {},
+  "listeners": [
+    {
+      "id": "w90ho4r778c",
+      "eventName": "ready",
+      "type": "rematch",
+      "handler": {
+        "name": "personal_whenready",
+        "module": "personal",
+        "params": {}
+      },
+      "isCapturePhase": false,
+      "noPropagation": false
+    }
+  ],
+  "_ignoreResources": []
+}

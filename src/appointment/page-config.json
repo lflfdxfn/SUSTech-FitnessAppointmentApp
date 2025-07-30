@@ -1,0 +1,94 @@
+{
+  "attributes": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorBottom": "#FFFFFF",
+    "backgroundColorTop": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "namespace": "appointment",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "预约",
+    "navigationStyle": "default",
+    "pageOrientation": "portrait",
+    "reachBottomDistance": 50,
+    "src": "",
+    "title": "预约",
+    "style": {
+      "height": "100%",
+      "margin": "0px",
+      "padding": "0px",
+      "backgroundColor": "#ffffff"
+    }
+  },
+  "dataset": {
+    "query": {},
+    "state": {
+      "topTab_today_date": {
+        "name": "topTab_today_date",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": true
+      },
+      "topTab_tomorrow_date": {
+        "name": "topTab_tomorrow_date",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": true
+      },
+      "button_appointment_text": {
+        "name": "button_appointment_text",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "开始预约",
+        "enableSyncLocal": false
+      },
+      "var_available_info_today": {
+        "name": "var_available_info_today",
+        "label": "",
+        "varType": "state",
+        "dataType": "object",
+        "initialValue": {},
+        "enableSyncLocal": true
+      },
+      "button_appointment_disabled": {
+        "name": "button_appointment_disabled",
+        "label": "",
+        "varType": "state",
+        "dataType": "boolean",
+        "initialValue": false,
+        "enableSyncLocal": false
+      },
+      "var_available_info_tomorrow": {
+        "name": "var_available_info_tomorrow",
+        "label": "",
+        "varType": "state",
+        "dataType": "object",
+        "initialValue": {},
+        "enableSyncLocal": true
+      }
+    },
+    "params": {}
+  },
+  "extra": {},
+  "listeners": [
+    {
+      "id": "w80roc50ody",
+      "eventName": "ready",
+      "type": "rematch",
+      "handler": {
+        "name": "page_appointment_whenready",
+        "module": "appointment",
+        "params": {}
+      },
+      "isCapturePhase": false,
+      "noPropagation": false
+    }
+  ],
+  "_ignoreResources": []
+}

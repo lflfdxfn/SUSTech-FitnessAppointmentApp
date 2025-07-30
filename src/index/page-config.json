@@ -1,0 +1,101 @@
+{
+  "attributes": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorBottom": "#FFFFFF",
+    "backgroundColorTop": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "namespace": "index",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "登录",
+    "navigationStyle": "default",
+    "pageOrientation": "portrait",
+    "reachBottomDistance": 50,
+    "src": "",
+    "title": "登录",
+    "style": {
+      "height": "100%",
+      "margin": "0px",
+      "padding": "0px",
+      "backgroundColor": "#ffffff"
+    }
+  },
+  "dataset": {
+    "query": {},
+    "state": {
+      "var_error_info": {
+        "name": "var_error_info",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "无",
+        "enableSyncLocal": false
+      },
+      "button_send_text": {
+        "name": "button_send_text",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "发送到邮箱",
+        "enableSyncLocal": false
+      },
+      "button_login_text": {
+        "name": "button_login_text",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "登录/注册",
+        "enableSyncLocal": false
+      },
+      "var_true_veri_code": {
+        "name": "var_true_veri_code",
+        "label": "生成的验证码",
+        "varType": "state",
+        "dataType": "number",
+        "initialValue": -1,
+        "enableSyncLocal": false
+      },
+      "var_id_of_veri_code": {
+        "name": "var_id_of_veri_code",
+        "label": "",
+        "varType": "state",
+        "dataType": "number",
+        "initialValue": 33333333,
+        "enableSyncLocal": false
+      },
+      "button_send_disabled": {
+        "name": "button_send_disabled",
+        "label": "",
+        "varType": "state",
+        "dataType": "boolean",
+        "initialValue": false,
+        "enableSyncLocal": false
+      },
+      "button_login_disabled": {
+        "name": "button_login_disabled",
+        "label": "",
+        "varType": "state",
+        "dataType": "boolean",
+        "initialValue": false,
+        "enableSyncLocal": false
+      }
+    }
+  },
+  "extra": {},
+  "listeners": [
+    {
+      "id": "wvk20ztvz36",
+      "eventName": "ready",
+      "type": "rematch",
+      "handler": {
+        "name": "login_whenready",
+        "module": "index",
+        "params": {}
+      },
+      "isCapturePhase": false,
+      "noPropagation": false
+    }
+  ],
+  "_ignoreResources": []
+}

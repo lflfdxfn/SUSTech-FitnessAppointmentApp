@@ -1,0 +1,816 @@
+[
+  {
+    "id": "layout_ix0f9iwz",
+    "label": "layout_ix0f9iwz",
+    "module": "$template",
+    "component": "layout_ix0f9iwz",
+    "items": [
+      {
+        "id": "default",
+        "component": "",
+        "items": [
+          {
+            "id": "container7",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "top": "0",
+                "left": "0",
+                "right": "0",
+                "height": "12vh",
+                "zIndex": 1000,
+                "display": "flex",
+                "position": "fixed",
+                "alignItems": "center",
+                "justifyContent": "space-between",
+                "backgroundColor": "#a9225b",
+                "borderBottomColor": "#b76990",
+                "borderBottomStyle": "solid",
+                "borderBottomWidth": "5rpx"
+              }
+            },
+            "items": [
+              {
+                "id": "container8",
+                "component": "Container",
+                "attributes": {
+                  "data": {},
+                  "style": {
+                    "margin": "auto",
+                    "display": "flex",
+                    "alignItems": "center",
+                    "justifyContent": "center"
+                  }
+                },
+                "items": [
+                  {
+                    "id": "text12",
+                    "component": "WdText",
+                    "attributes": {
+                      "inheritColor": true,
+                      "maxLines": "1",
+                      "text": "个人中心",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "45rpx",
+                        "fontFamily": "'SimSun', sans-serif",
+                        "fontWeight": "bold",
+                        "marginBottom": "-4.5vh"
+                      }
+                    },
+                    "directives": {
+                      ":if": true
+                    },
+                    "scopedStyle": ":scope {\r\n  text-shadow: 2px 0 #606060, 0 2px #606060, -1px 0 #606060, 0 -1px #606060;\r\n}",
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "container4",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "--a": "27rpx",
+                "top": "12vh",
+                "width": "100%",
+                "height": "50vh",
+                "padding": "1.5vh 2.8vh",
+                "position": "fixed",
+                "backgroundImage": "linear-gradient(#a9225b, #dd5a91)",
+                "--button-border-radius": "10rpx"
+              }
+            },
+            "items": [
+              {
+                "id": "grid1",
+                "component": "Grid",
+                "attributes": {
+                  "gutterX": "8px",
+                  "gutterY": "8px",
+                  "template": "[1,3]"
+                },
+                "items": [
+                  {
+                    "id": "row1",
+                    "component": "Row",
+                    "attributes": {
+                      "alignItems": "stretch"
+                    },
+                    "items": [
+                      {
+                        "id": "col1",
+                        "component": "Col",
+                        "attributes": {
+                          "alignSelf": "auto",
+                          "widthType": "auto-fill",
+                          "style": {
+                            "width": "15%"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "text6",
+                            "component": "WdText",
+                            "attributes": {
+                              "inheritColor": true,
+                              "maxLines": "1",
+                              "text": "姓名："
+                            },
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "scopedStyle": ":scope {\n  display: flex;\n  align-items: center; /* 竖直方向上居中 */\n  font-weight: bold; /* 加粗 */\n}",
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      },
+                      {
+                        "id": "col2",
+                        "component": "Col",
+                        "attributes": {
+                          "alignSelf": "auto",
+                          "widthType": "auto-fill",
+                          "style": {
+                            "width": "23%"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "text7",
+                            "component": "WdText",
+                            "attributes": {
+                              "inheritColor": true,
+                              "maxLines": "1",
+                              ":text": "$w.app.dataset.state.var_usr_name"
+                            },
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "scopedStyle": ":scope {\n  display: flex;\n  align-items: center; /* 竖直方向上居中 */\n}",
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      },
+                      {
+                        "id": "col3",
+                        "component": "Col",
+                        "attributes": {
+                          "alignSelf": "auto",
+                          "widthType": "auto-fill",
+                          "style": {
+                            "width": "15%"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "text10",
+                            "component": "WdText",
+                            "attributes": {
+                              "inheritColor": true,
+                              "maxLines": "1",
+                              "text": "学号："
+                            },
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "scopedStyle": ":scope {\r\n  display: flex;\r\n  align-items: center; /* 竖直方向上居中 */\r\n  font-weight: bold; /* 加粗 */\r\n}",
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      },
+                      {
+                        "id": "col4",
+                        "component": "Col",
+                        "attributes": {
+                          "alignSelf": "auto",
+                          "widthType": "auto-fill",
+                          "style": {
+                            "width": "22%"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "text11",
+                            "component": "WdText",
+                            "attributes": {
+                              "inheritColor": true,
+                              "maxLines": "1",
+                              ":text": "$w.app.dataset.state.var_usr_id"
+                            },
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "scopedStyle": ":scope {\r\n  display: flex;\r\n  align-items: center; /* 竖直方向上居中 */\r\n}",
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      },
+                      {
+                        "id": "col5",
+                        "component": "Col",
+                        "attributes": {
+                          "alignSelf": "auto",
+                          "widthType": "auto-fill",
+                          "style": {
+                            "width": "25%"
+                          }
+                        },
+                        "items": [
+                          {
+                            "id": "button2",
+                            "component": "WdButton",
+                            "attributes": {
+                              "icon": "success",
+                              "size": "sm",
+                              "text": "退出登录",
+                              "theme": "warning",
+                              "style": {
+                                "width": "100%"
+                              }
+                            },
+                            "listeners": [
+                              {
+                                "id": "wo2j9q4w150",
+                                "eventName": "tap",
+                                "type": "rematch",
+                                "handler": {
+                                  "name": "button_quit_loggedin",
+                                  "module": "personal",
+                                  "params": {}
+                                },
+                                "isCapturePhase": false,
+                                "noPropagation": false
+                              }
+                            ],
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {
+                      "attributeExtraData": {}
+                    }
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "scopedStyle": ":scope button {\n  font-size: 24rpx;\n  font-weight: bold;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: var(--button-border-radius);\n  width: 12vh;\n}\n\n:scope {\n  font-size: var(--a);\n  color: #fff;\n}",
+            "extra": {
+              "attributeExtraData": {}
+            }
+          },
+          {
+            "id": "container9",
+            "component": "Container",
+            "attributes": {
+              "data": {},
+              "style": {
+                "--a": "27rpx",
+                "top": "20vh",
+                "width": "92%",
+                "filter": "drop-shadow(0 0 10rpx #8a1d4a)",
+                "margin": "0rpx 4% 0rpx 4%",
+                "padding": "10rpx 0rpx 10rpx 0rpx",
+                "position": "fixed",
+                "WebkitFilter": "drop-shadow(0 0 10rpx #8a1d4a)",
+                "borderRadius": "10rpx",
+                "backgroundColor": "white"
+              }
+            },
+            "items": [
+              {
+                "id": "topTab1",
+                "component": "WdTopTab",
+                "attributes": {
+                  "isMultipleSlot": true,
+                  "isSlotAuto": true,
+                  "list": [
+                    {
+                      "label": "预约记录",
+                      "value": "1",
+                      "slotKey": "1",
+                      "iconType": "none",
+                      "__sortid__": "adlJr6HviK6xmv1h2nD-G",
+                      "isDisabled": false
+                    },
+                    {
+                      "label": "签到日历",
+                      "value": "2",
+                      "slotKey": "2",
+                      "iconType": "none",
+                      "__sortid__": "_SYtEqRLN3jStyN9PCwuG",
+                      "isDisabled": false
+                    }
+                  ],
+                  "style": {
+                    "--a": "29rpx",
+                    "--b": "25rpx",
+                    "--padding": "0.5vh"
+                  }
+                },
+                "items": [
+                  {
+                    "id": "autoPanel_1",
+                    "component": "",
+                    "items": [
+                      {
+                        "id": "listView1",
+                        "component": "ListView",
+                        "attributes": {
+                          "bindConnectMetadata": {
+                            "datasource": {}
+                          },
+                          "connectorMethod": {
+                            "inParams": [],
+                            "outParams": []
+                          },
+                          "connectorParams": {},
+                          ":dataSourceData": "$w.app.dataset.state.var_order_history_tmp",
+                          "dataSourceType": "expression",
+                          "datasource": {
+                            "name": "order_history",
+                            "type": "datamodal",
+                            "extra": {
+                              "params": {},
+                              "viewId": "view-6awslqzl4w",
+                              "methodName": "wedaGetRecordsV2"
+                            }
+                          },
+                          "emptyText": "暂无预约记录",
+                          "enableTotal": false,
+                          "exprToFieldsSchema": "bc9c864b",
+                          "isSetStatus": true,
+                          "isSupportApis": false,
+                          "isSupportMultipleSort": true,
+                          "pageIndex": 1,
+                          "pageSize": 3,
+                          "pagination": "pagination",
+                          ":queryCondition": "{\n \"where\": {\n  \"$and\": [\n   {\n    \"$and\": [\n     {\n      \"order_userid\": {\n       \"$eq\": $w.app.dataset.state.var_usr_id\n      }\n     }\n    ]\n   }\n  ]\n },\n \"relateWhere\": {}\n}",
+                          "supportManyRelated": true,
+                          "template": "detailList"
+                        },
+                        "items": [
+                          {
+                            "id": "repeater1",
+                            "component": "Repeater",
+                            "attributes": {
+                              ":data": "$w.listView1.records || []",
+                              "forIndex": "index_listView1",
+                              "forItem": "item_listView1",
+                              "key": "_id",
+                              "suffix": "listView1"
+                            },
+                            "items": [
+                              {
+                                "id": "container1",
+                                "component": "Container",
+                                "attributes": {
+                                  "data": {},
+                                  "style": {
+                                    "width": "100%",
+                                    "display": "flex",
+                                    "padding": "12PX",
+                                    "position": "relative",
+                                    "boxSizing": "border-box",
+                                    "alignItems": "center",
+                                    "borderBottom": "1px solid var(--wd-color-border-separator)"
+                                  }
+                                },
+                                "items": [
+                                  {
+                                    "id": "container2",
+                                    "component": "Container",
+                                    "attributes": {
+                                      "data": {},
+                                      "style": {
+                                        "flex": "1",
+                                        "width": "80%",
+                                        "wordBreak": "break-all"
+                                      }
+                                    },
+                                    "items": [
+                                      {
+                                        "id": "text3",
+                                        "component": "WdText",
+                                        "attributes": {
+                                          "maxLines": "1",
+                                          ":text": "$w.item_listView1.ordered_day",
+                                          "style": {
+                                            "width": "80%",
+                                            "marginBottom": "4px"
+                                          }
+                                        },
+                                        "directives": {
+                                          ":if": true
+                                        },
+                                        "scopedStyle": ":scope {\n  font-weight: bold;\n}",
+                                        "extra": {
+                                          "attributeExtraData": {}
+                                        }
+                                      },
+                                      {
+                                        "id": "container3",
+                                        "component": "Container",
+                                        "attributes": {
+                                          "data": {},
+                                          "style": {
+                                            "width": "80%",
+                                            "display": "flex",
+                                            "flexWrap": "nowrap",
+                                            "alignItems": "center",
+                                            "whiteSpace": "pre-line"
+                                          }
+                                        },
+                                        "items": [
+                                          {
+                                            "id": "text4",
+                                            "component": "WdText",
+                                            "attributes": {
+                                              "maxLines": "1",
+                                              "text": "预约时间：",
+                                              "style": {
+                                                "color": "var(--wd-color-text-placeholder)",
+                                                "fontSize": "25rpx"
+                                              }
+                                            },
+                                            "directives": {
+                                              ":if": true
+                                            },
+                                            "extra": {
+                                              "attributeExtraData": {}
+                                            }
+                                          },
+                                          {
+                                            "id": "text5",
+                                            "component": "WdText",
+                                            "attributes": {
+                                              "maxLines": "1",
+                                              ":text": "$w.item_listView1.ordered_period",
+                                              "style": {
+                                                "color": "var(--wd-color-text-placeholder)",
+                                                "fontSize": "25rpx"
+                                              }
+                                            },
+                                            "directives": {
+                                              ":if": true
+                                            },
+                                            "extra": {
+                                              "attributeExtraData": {}
+                                            }
+                                          },
+                                          {
+                                            "id": "text9",
+                                            "component": "WdText",
+                                            "attributes": {
+                                              "maxLines": "1",
+                                              ":text": "$w.item_listView1._id",
+                                              "style": {
+                                                "color": "var(--wd-color-text-placeholder)"
+                                              }
+                                            },
+                                            "directives": {
+                                              ":display": false
+                                            },
+                                            "extra": {
+                                              "attributeExtraData": {}
+                                            }
+                                          }
+                                        ],
+                                        "directives": {
+                                          ":if": true
+                                        },
+                                        "extra": {
+                                          "attributeExtraData": {}
+                                        }
+                                      },
+                                      {
+                                        "id": "container5",
+                                        "component": "Container",
+                                        "attributes": {
+                                          "data": {},
+                                          "style": {
+                                            "width": "80%",
+                                            "display": "flex",
+                                            "flexWrap": "nowrap",
+                                            "alignItems": "center",
+                                            "whiteSpace": "pre-line"
+                                          }
+                                        },
+                                        "items": [
+                                          {
+                                            "id": "text8",
+                                            "component": "WdText",
+                                            "attributes": {
+                                              "maxLines": "1",
+                                              "text": "是否前来：",
+                                              "style": {
+                                                "color": "var(--wd-color-text-placeholder)",
+                                                "fontSize": "25rpx"
+                                              }
+                                            },
+                                            "directives": {
+                                              ":if": true
+                                            },
+                                            "extra": {
+                                              "attributeExtraData": {}
+                                            }
+                                          },
+                                          {
+                                            "id": "text1",
+                                            "component": "WdText",
+                                            "attributes": {
+                                              "maxLines": "1",
+                                              ":text": "$w.item_listView1.if_arrived ? `是`: `否`",
+                                              "style": {
+                                                "color": "var(--wd-color-text-placeholder)",
+                                                "fontSize": "25rpx"
+                                              }
+                                            },
+                                            "directives": {
+                                              ":if": true
+                                            },
+                                            ":style": "$w.item_listView1.if_arrived ? {color: 'green'} : {color:'red'}",
+                                            "extra": {
+                                              "attributeExtraData": {}
+                                            }
+                                          }
+                                        ],
+                                        "directives": {
+                                          ":if": true
+                                        },
+                                        "extra": {
+                                          "attributeExtraData": {}
+                                        }
+                                      }
+                                    ],
+                                    "directives": {
+                                      ":if": true
+                                    },
+                                    "extra": {
+                                      "attributeExtraData": {}
+                                    }
+                                  },
+                                  {
+                                    "id": "container6",
+                                    "component": "Container",
+                                    "attributes": {
+                                      "data": {},
+                                      "style": {
+                                        "width": "30%",
+                                        "display": "flex",
+                                        "opacity": 0.9,
+                                        "alignItems": "center",
+                                        "marginLeft": "16PX",
+                                        "justifyContent": "center"
+                                      }
+                                    },
+                                    "items": [
+                                      {
+                                        "id": "button3",
+                                        "component": "WdButton",
+                                        "attributes": {
+                                          ":disabled": "$w.page.dataset.state.var_order_delete_disable",
+                                          "icon": "success",
+                                          "size": "sm",
+                                          "text": "取消预约"
+                                        },
+                                        "listeners": [
+                                          {
+                                            "id": "wg96vlfr185",
+                                            "eventName": "tap",
+                                            "type": "rematch",
+                                            "handler": {
+                                              "name": "button_cancel",
+                                              "module": "personal",
+                                              "params": {}
+                                            },
+                                            "isCapturePhase": false,
+                                            "noPropagation": false
+                                          },
+                                          {
+                                            "id": "wddo2850nkq",
+                                            "eventName": "wg96vlfr185.success",
+                                            "type": "platform",
+                                            "handler": {
+                                              "name": "showModal",
+                                              "module": "platform",
+                                              "params": {
+                                                "cancelColor": "#000000",
+                                                "cancelText": "取消",
+                                                "confirmColor": "#576B95",
+                                                "confirmText": "确认",
+                                                ":content": "`确定要取消${$w.page.dataset.state.var_order_date_tmp}的预约吗`",
+                                                "showCancel": true,
+                                                "title": "确认提醒"
+                                              }
+                                            },
+                                            "isCapturePhase": false,
+                                            "noPropagation": false
+                                          },
+                                          {
+                                            "id": "woaia2beuxe",
+                                            "eventName": "wddo2850nkq.confirm",
+                                            "type": "rematch",
+                                            "handler": {
+                                              "name": "method_delete_appointment",
+                                              "module": "personal",
+                                              "params": {}
+                                            },
+                                            "isCapturePhase": false,
+                                            "noPropagation": false
+                                          },
+                                          {
+                                            "id": "wjzu66vw0j4",
+                                            "eventName": "wg96vlfr185.fail",
+                                            "type": "platform",
+                                            "handler": {
+                                              "name": "showToast",
+                                              "module": "platform",
+                                              "params": {
+                                                "duration": 1500,
+                                                "icon": "error",
+                                                "title": "已过预约时间，无法取消该预约"
+                                              }
+                                            },
+                                            "isCapturePhase": false,
+                                            "noPropagation": false
+                                          }
+                                        ],
+                                        "directives": {
+                                          ":if": true
+                                        },
+                                        "extra": {
+                                          "attributeExtraData": {}
+                                        }
+                                      }
+                                    ],
+                                    "directives": {
+                                      ":if": true
+                                    },
+                                    "extra": {
+                                      "attributeExtraData": {}
+                                    }
+                                  }
+                                ],
+                                "directives": {
+                                  ":if": true
+                                },
+                                "extra": {
+                                  "attributeExtraData": {}
+                                }
+                              }
+                            ],
+                            "directives": {
+                              ":if": true
+                            },
+                            "extra": {
+                              "attributeExtraData": {}
+                            }
+                          }
+                        ],
+                        "directives": {
+                          ":if": true
+                        },
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {}
+                  },
+                  {
+                    "id": "autoPanel_2",
+                    "component": "",
+                    "items": [
+                      {
+                        "id": "calendar1",
+                        "component": "WdCalendar",
+                        "attributes": {
+                          ":configData": "$w.app.dataset.state.var_order_history_tmp.map(item => ({\n  \"disabled\": \"false\",\n  \"matchDate\": item.ordered_day,\n  \"marked\": (item.if_arrived) ? \"#00A870\" : \"#E34D59\"\n}))",
+                          ":value": "$w.Now()",
+                          "style": {
+                            "width": "95%",
+                            "margin": "0 auto"
+                          }
+                        },
+                        "directives": {
+                          ":if": true
+                        },
+                        "scopedStyle": ":scope {\n  font-size: 24rpx; /* 字号小一点 */\n}",
+                        "extra": {
+                          "attributeExtraData": {}
+                        }
+                      }
+                    ],
+                    "directives": {
+                      ":if": true
+                    },
+                    "extra": {}
+                  }
+                ],
+                "directives": {
+                  ":if": true
+                },
+                "scopedStyle": ":scope .wd-tabs__header {\r\n  font-size: var(--a);\r\n  padding: var(--padding) 0;\r\n}\r\n\r\n:scope .wd-tabs__item {\r\n  font-size: var(--a);\r\n  padding: 0 var(--padding);\r\n  position: relative; /* 为标签容器添加相对定位，以便绝对定位横线 */\r\n}\r\n\r\n:scope button {\r\n  font-size: var(--b);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  border-radius: 15rpx;\r\n  width: 15vh;\r\n  font-weight: bold;\r\n}\r\n:scope {\r\n  font-size: var(--b);\r\n}",
+                "extra": {
+                  "attributeExtraData": {}
+                }
+              }
+            ],
+            "directives": {
+              ":if": true
+            },
+            "extra": {
+              "attributeExtraData": {}
+            }
+          }
+        ],
+        "directives": {
+          ":if": true
+        },
+        "extra": {}
+      }
+    ],
+    "directives": {
+      ":if": true
+    },
+    "extra": {}
+  }
+]

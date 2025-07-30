@@ -1,0 +1,77 @@
+{
+  "attributes": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorBottom": "#FFFFFF",
+    "backgroundColorTop": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "namespace": "check_in",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "签到",
+    "navigationStyle": "default",
+    "pageOrientation": "portrait",
+    "reachBottomDistance": 50,
+    "src": "",
+    "title": "签到"
+  },
+  "dataset": {
+    "state": {
+      "var_check_info": {
+        "name": "var_check_info",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": ""
+      },
+      "var_date_in_code": {
+        "name": "var_date_in_code",
+        "label": "二维码的日期",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": false
+      },
+      "var_time_in_code": {
+        "name": "var_time_in_code",
+        "label": "二维码的时间",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": false
+      },
+      "var_infomed_success": {
+        "name": "var_infomed_success",
+        "label": "是否已经提醒“签到成功”",
+        "varType": "state",
+        "dataType": "boolean",
+        "initialValue": false,
+        "enableSyncLocal": false
+      },
+      "var_scan_history_tmp": {
+        "name": "var_scan_history_tmp",
+        "label": "",
+        "varType": "state",
+        "dataType": "array",
+        "initialValue": [],
+        "enableSyncLocal": true
+      }
+    }
+  },
+  "extra": {},
+  "listeners": [
+    {
+      "id": "wiecuchmz6j",
+      "eventName": "ready",
+      "type": "rematch",
+      "handler": {
+        "name": "check_in_whenready",
+        "module": "check_in",
+        "params": {}
+      },
+      "isCapturePhase": false,
+      "noPropagation": false
+    }
+  ],
+  "_ignoreResources": []
+}

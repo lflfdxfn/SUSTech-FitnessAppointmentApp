@@ -1,0 +1,62 @@
+{
+  "attributes": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorBottom": "#FFFFFF",
+    "backgroundColorTop": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "namespace": "rules",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "健身房公告",
+    "navigationStyle": "default",
+    "pageOrientation": "portrait",
+    "reachBottomDistance": 50,
+    "src": "",
+    "title": "健身房公告"
+  },
+  "dataset": {
+    "state": {
+      "var_rules_markdown": {
+        "name": "var_rules_markdown",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": true
+      },
+      "var_rules_markdown1": {
+        "name": "var_rules_markdown1",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": true
+      },
+      "txt_announcement_txt": {
+        "name": "txt_announcement_txt",
+        "label": "",
+        "varType": "state",
+        "dataType": "string",
+        "initialValue": "",
+        "enableSyncLocal": false
+      }
+    }
+  },
+  "extra": {},
+  "listeners": [
+    {
+      "id": "wlz27k9vx9p",
+      "eventName": "load",
+      "type": "rematch",
+      "handler": {
+        "name": "rules_whenready",
+        "module": "rules",
+        "params": {}
+      },
+      "isCapturePhase": false,
+      "noPropagation": false
+    }
+  ],
+  "_ignoreResources": []
+}
